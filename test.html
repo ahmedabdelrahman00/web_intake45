@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <style>
+        #chat-box {
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            width: 300px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            border-radius: 10px;
+            overflow: hidden;
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+            animation: slide-up 0.3s ease-in-out;
+        }
+
+        /* Chat header styles */
+        #chat-header {
+            background: red;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        #chat-header label {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Chat body styles */
+        #chat-body {
+            padding: 10px;
+            height: 150px;
+            overflow-y: auto;
+            font-size: 14px;
+            border-bottom: 1px solid #ddd;
+            color: #333;
+        }
+
+        /* Chat input styles */
+        #chat-input {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            background: #f9f9f9;
+        }
+
+        #chat-input input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 5px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        #chat-input button {
+            background: red;
+            color: white;
+            border: none;
+            padding: 8px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+        #chat-input button:hover {
+            background: darkred;
+        }
+
+        /* Chat toggle functionality */
+        #chat-toggle:checked ~ #chat-box {
+            display: flex;
+        }
+
+        /* Chat icon styles */
+        #chat-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        /* Add slide-up animation */
+        @keyframes slide-up {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="chat-toggle">
+    <label for="chat-toggle" id="chat-icon">
+        Chat with an Expert
+    </label>
+
+    <div id="chat-box">
+        <div id="chat-header">
+            <span>CORT</span>
+            <label for="chat-toggle">X</label>
+        </div>
+        <div id="chat-body">
+            <p>Welcome to CORT!</p>
+        </div>
+        <div id="chat-input">
+            <input type="text" placeholder="Type your message..." />
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>
