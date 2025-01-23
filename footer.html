@@ -3,151 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            text-align: center;
-            padding: 50px;
-            background-color: #f5f5f5;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-            color: #333;
-        }
-
-        .contact-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 40px;
-            gap: 20px;
-            background-color: #fff;
-        }
-
-        .contact-form, .contact-map {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .contact-form {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-form h2 {
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-            color: #10a061;
-        }
-
-        .contact-form label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .contact-form button {
-            padding: 10px 20px;
-            background-color: #10a061;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        .contact-form button:hover {
-            background-color: #0c8342;
-        }
-
-        .contact-map {
-            height: 400px;
-            border-radius: 5px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        #map {
-            height: 100%;
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer a {
-            color: #10a061;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>UrbanDecor</title>
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
+    <!-- Header Section -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo"><img src="Images/CORT_EF_Logo_RGB_web.png"  width="150px" height="90px"></div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="Contact_us.html">Contact</a></li>
+            </ul>
+            <div class="search-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon">
+            </div>
+        </nav>
     </header>
 
-    <div class="contact-container">
-        <div class="contact-form">
-            <h2>Get in Touch</h2>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
+    <div class="hero">
+        <div class="hero-card">
+            <div class="hero-content">
+                <h1>Transform Your Space<br>With Style</h1>
+                <p>We will help you to make an elegant and luxurious interior designed by professionals.</p>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image">
+                    <img src="Images/header.png" alt="Interior Design">
+                    <img src="Images/header2.jpg" alt="Interior Design">
+                    <img src="Images/header3.jpg.png" alt="Interior Design">
+                </div>
+            </div>
         </div>
-
-        <div class="contact-map" id="map"></div>
     </div>
+    
+    
+    <!-- Products Section -->
+    <section id="products" class="product-section">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/product-1.png" alt="Product 1">
+                <h3>Stackable Chair</h3>
+                <p>$87.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/product-2.png" alt="Product 2">
+                <h3>Lamp Tool</h3>
+                <p>$35.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images/product-3.png" alt="Product 3">
+                <h3>Arla Accent Chair</h3>
+                <p>$55.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images/product-4.png" alt="Product 4">
+                <h3>Wooden Stool</h3>
+                <p>$45.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="images/product-5.png" alt="Product 1">
+                <h3>Stackable Chair</h3>
+                <p>$87.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="images/product-6.png" alt="Product 2">
+                <h3>Lamp Tool</h3>
+                <p>$35.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="images/table.jpg" alt="Product 3">
+                <h3>Ragis table</h3>
+                <p>$55.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="images/Product88.jpg" alt="Product 4">
+                <h3>Atherton Chair</h3>
+                <p>$45.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 9 -->
+            <div class="product-card">
+                <img src="images/product-1.png" alt="Product 1">
+                <h3>Stackable Chair</h3>
+                <p>$87.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 10 -->
+            <div class="product-card">
+                <img src="images/Product13.jpg" alt="Product 2">
+                <h3>Aruba Lounge Chair</h3>
+                <p>$35.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 11 -->
+            <div class="product-card">
+                <img src="images/product12.jpeg" alt="Product 3">
+                <h3>Arla Accent Chair</h3>
+                <p>$55.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 12 -->
+            <div class="product-card">
+                <img src="images/product10.jpg" alt="Product 4">
+                <h3>Wooden Stool</h3>
+                <p>$45.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>© 2025 Your Company Name. All Rights Reserved. <a href="#">Privacy Policy</a></p>
+
+
+
+
+    <!-- 
+    
+    
+    -->
+    <footer style="background-color: #222; color: #fff; padding: 20px 20px; text-align: center; font-family: 'Red Hat Display', sans-serif;">
+        <div style="max-width: 1200px; margin: auto;">
+            <!-- Logo and Description -->
+            <div style="margin-bottom: 10px;">
+                <img src="Images/cort_logo.svg" alt="Logo" width="120px" style="display: block; margin: 0 auto 10px;">
+                <p style="font-size: 0.8rem; line-height: 1.4; max-width: 700px; margin: 0 auto; color: #ccc;">Since 1972, CORT has been revolutionizing furniture rental. Enjoy the freedom to transform your spaces effortlessly and flexibly.</p>
+            </div>
+    
+            <!-- Navigation Links -->
+            <div style="margin-bottom: 10px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <a href="#" style="color: #fff; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s ease;">About Us</a>
+                <a href="#" style="color: #fff; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s ease;">Services</a>
+                <a href="Contact_us.html" style="color: #fff; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s ease;">Contact</a>
+                <a href="#" style="color: #fff; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s ease;">FAQs</a>
+                <a href="#" style="color: #fff; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s ease;">Privacy Policy</a>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div style="margin-bottom: 10px; display: flex; justify-content: center; gap: 10px;">
+                <a href="#" style="display: inline-block; text-decoration: none;">
+                    <img src="Images/facebook.png" alt="Facebook" width="30px">
+                </a>
+                <a href="#" style="display: inline-block; text-decoration: none;">
+                    <img src="Images/twitter.svg" alt="Twitter" width="30px">
+                </a>
+                <a href="#" style="display: inline-block; text-decoration: none;">
+                    <img src="Images/icons8-instagram-240.png" alt="Instagram" width="30px">
+                </a>
+                <a href="#" style="display: inline-block; text-decoration: none;">
+                    <img src="Images/icons8-linkedin-240.png" alt="LinkedIn" width="30px">
+                </a>
+            </div>
+    
+            <!-- Newsletter Signup -->
+            <div style="margin-bottom: 10px;">
+                <h3 style="color: #fff; font-size: 1rem; font-weight: 600; margin-bottom: 10px;">Subscribe to our Newsletter</h3>
+                <form style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
+                    <input type="email" placeholder="Enter your email" style="padding: 5px 10px; font-size: 0.8rem; border: none; border-radius: 5px; width: 220px; max-width: 100%;">
+                    <button type="submit" style="padding: 5px 15px; font-size: 0.8rem; background-color: #004A80; color: #fff; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">Subscribe</button>
+                </form>
+            </div>
+    
+            <!-- Copyright Section -->
+            <div style="font-size: 0.7rem; color: #aaa;">
+                &copy; 2025 CORT Furniture Rental. All Rights Reserved.
+            </div>
+        </div>
     </footer>
+    <!--  -->
 
-    <script>
-        var map = L.map('map').setView([30.0444, 31.2357], 13); // Cairo coordinates
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 18,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        var marker = L.marker([30.0444, 31.2357]).addTo(map);
-        marker.bindPopup('<b>Our Location</b><br>Cairo, Egypt').openPopup();
-    </script>
+    
 </body>
 </html>
