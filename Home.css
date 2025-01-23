@@ -30,6 +30,7 @@ body {
     justify-content: flex-start;
 }
 
+
 .ah {
     margin: 10px;
 }
@@ -38,9 +39,14 @@ body {
     margin-inline: 10px;
     color: black;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
 }
 
+.e:hover {
+    color: #007BFF; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
 /* Section below navbar */
 #Home .firstmenu .firstmenu_second {
     width: 100%;
@@ -48,6 +54,8 @@ body {
     text-align: center;
     background-color: rgba(128, 128, 128, 0.5);
     padding: 30px 0;
+
+
 }
 
 #Home .firstmenu .firstmenu_second .content {
