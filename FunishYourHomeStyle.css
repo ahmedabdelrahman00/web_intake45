@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+}
+  
+.text_banner h2 {
+    color: #404040;
+    font-family: sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.banner {
+
+    background: #ffc000;
+    height: 200px;
+
+
+}
+
+
+.big_text {
+    color: white;
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 7;
+    font-family: alternate gothic;
+    height: 400px;
+}
+
+.background-cover {
+
+    background-image: url("Images/Home_furniture_Main.jpg");
+    background-size: cover;
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+.background_home {
+    background-color: #fafaf8;
+    text-align: center;
+
+    font-family: avalan;
+
+}
+
+
+.photo-container {
+    display: flex;
+    /* Use Flexbox */
+    justify-content: center;
+    /* Horizontally center the photos */
+    align-items: center;
+    /* Vertically center the photos */
+    gap: 20px;
+    /* Add space between photos */
+    height: 60vh;
+    /* Make the container fill the viewport */
+}
+
+
+.photo-item {
+    position: relative;
+    /* Enable positioning for the button */
+    display: inline-block;
+    /* Maintain image dimensions */
+}
+
+.button {
+    text-decoration: none;
+    position: absolute;
+    /* Position relative to the .photo-item */
+    top: 50%;
+    /* Vertically center the button */
+    left: 50%;
+    /* Horizontally center the button */
+    transform: translate(-50%, 300%);
+    /* Adjust for perfect centering */
+    padding: 10px 20px;
+    /* Button padding */
+    background-color: gray;
+    /* Semi-transparent black background */
+    color: white;
+    /* White text */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer on hover */
+    transition: background-color 0.3s;
+    /* Smooth hover transition */
+    width: 60%;
+    
+}
+
+.button:hover {
+    background-color: red;
+    /* Darker background on hover */
+}
+
+.steps-container {
+    display: flex;
+    /* Use Flexbox */
+    justify-content: center;
+    /* Horizontally center the photos */
+    align-items: center;
+    /* Vertically center the photos */
+    gap: 50px;
+    /* Add space between photos */
+    height: 60vh;
+    /* Make the container fill the viewport */
+}
+
+
+
+.step_cell {
+    background-color: #e0fdf5;
+    color: #4d4d4d;
+    font-family: sans-serif;
+
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+h4 {
+    color: #4d4d4d;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.steps_text {
+    position: relative;
+    /* Enable positioning for the button */
+    display: inline-block;
+    /* Maintain image dimensions */
+}
+
+pre {
+    color: #777777;
+    font-size: 15px;
+    font-family: arial;
+}
