@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
 }
  .firstmenu {
     height: 100vh;
@@ -8,7 +9,6 @@ body {
     background-image: url("Images/Home.jpg");
     /* Replace with your actual background image */
 }
-
 /* Navbar styling */
  .navbar {
     width: 100%;
@@ -17,6 +17,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    /* position: fixed; */
+    z-index: 1000; /* Ensures it stays above other elements */
 }
 
 
@@ -30,12 +32,16 @@ body {
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+    margin-left: 40px;
 }
 
-.navbar .e:hover {
-    color: #007BFF; /* Change color on hover */
+ .navbar .e:hover {
+    color:red; /* Change color on hover */
     text-decoration: underline; /* Add underline on hover */
 }
+
+
+
 .text_banner h2 {
     color: #404040;
     font-family: sans-serif;
@@ -180,3 +186,5 @@ pre {
     font-size: 15px;
     font-family: arial;
 }
+
+

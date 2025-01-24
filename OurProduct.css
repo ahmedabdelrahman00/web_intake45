@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 body {
@@ -220,3 +220,83 @@ body {
 .add-to-cart:hover {
     background-color: #0056b3;
 }
+
+
+
+/*  */
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed; 
+    width: 100%; /* Spans the entire width of the viewport */
+    height: 90px;
+    z-index: 1000; /* Ensures it stays above other elements */
+  }
+  
+  /* Logo */
+ /* Logo Styling */
+.logo img {
+    max-height: 400px; /* Increase the max height */
+    width: 70px; /* Maintain aspect ratio */
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    padding: 0.5rem 0.8rem;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  /* Hover Effect: Underline and Box */
+  .nav-links a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e60023; /* Red underline color */
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links a:hover::before {
+    width: 100%;
+  }
+  
+  .nav-links a:hover {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    color: #e60023; /* Hover text color */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Search Icon */
+  .search-icon img {
+    width: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .search-icon img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  
