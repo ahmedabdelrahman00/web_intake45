@@ -1,7 +1,41 @@
 body {
     margin: 0;
 }
-  
+ .firstmenu {
+    height: 100vh;
+    background-position: center top;
+    background-size: cover;
+    background-image: url("Images/Home.jpg");
+    /* Replace with your actual background image */
+}
+
+/* Navbar styling */
+ .navbar {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.ah {
+    margin: 10px;
+}
+
+.navbar .e {
+    margin-inline: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.navbar .e:hover {
+    color: #007BFF; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
 .text_banner h2 {
     color: #404040;
     font-family: sans-serif;
