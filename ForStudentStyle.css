@@ -24,15 +24,30 @@ body {
   margin-inline: 10px;
   color: black;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
   transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
   margin-left: 40px;
+  padding: 8px 3px; /* Add padding for the box effect */
+  border-radius: 5px; /* Rounded corners */
 }
 
 .navbar .e:hover {
-  color:red; /* Change color on hover */
-  text-decoration: underline; /* Add underline on hover */
+  background-color: #fef6f6; /* Light background color on hover */
+  color: #e74c3c; /* Change text color on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for the box effect */
+  text-decoration: none; /* Ensure no underline on hover */
 }
+.search-icon img {
+    width: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+    margin-left: 220px;
+  }
+  
+  .search-icon img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    
+  }
 
 .title_text {
   color: #10a061;
